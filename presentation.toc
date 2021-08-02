@@ -1,0 +1,15 @@
+\beamer@sectionintoc {1}{Abstract}{3}{0}{1}
+\beamer@sectionintoc {2}{Overview of Data}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Data Set}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Variables}{7}{0}{2}
+\beamer@sectionintoc {3}{Brief Frequentist Approach}{12}{0}{3}
+\beamer@sectionintoc {4}{Bayesian Approach}{15}{0}{4}
+\beamer@subsectionintoc {4}{1}{Posterior Density}{15}{0}{4}
+\beamer@subsubsectionintoc {4}{1}{1}{MCMC Sampling}{23}{0}{4}
+\beamer@subsubsectionintoc {4}{1}{2}{OpenBUGS}{29}{0}{4}
+\beamer@subsectionintoc {4}{2}{Multiple Linear Regression}{36}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{1}{Model Comparison}{42}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{2}{Bayes Factor}{45}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{3}{Making Predictions}{48}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{49}{0}{5}
+\beamer@sectionintoc {6}{References}{51}{0}{6}

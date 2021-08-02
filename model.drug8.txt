@@ -1,0 +1,19 @@
+model
+{
+    M ~ dcat(p[1:2])
+    for (i in 1:m) {
+        Y[i] ~ dnorm(mu[M, i], tau[M])
+        mu[1, i] <- inprod(alpha[], X[i, ])
+        mu[2, i] <- inprod(beta[], X1[i, ])
+    }
+    p[1] <- 0.5
+    p[2] <- 0.5
+    for (i in 1:4) {
+        alpha[i] ~ dnorm(0.00000E+00, 1.00000E-06)
+    }
+    for (i in 1:2) {
+        beta[i] ~ dnorm(0.00000E+00, 1.00000E-06)
+    }
+    tau[1] ~ dgamma(0.01, 0.01)
+    tau[2] ~ dgamma(0.01, 0.01)
+}

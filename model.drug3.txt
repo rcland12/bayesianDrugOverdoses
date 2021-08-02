@@ -1,0 +1,16 @@
+model
+{
+    for (i in 1:m) {
+        Y[i] ~ dnorm(mu[i], tau)
+        mu[i] <- inprod(beta[], X[i, ])
+    }
+    for (i in 1:4) {
+        beta[i] ~ ddexp(0.00000E+00, tau)
+    }
+    for (i in 1:m) {
+        log_cpo[i] <- -0.5 * log(tau/6.283) - 0.5 * pow((Y[i] - 
+            mu[i]), 2)
+    }
+    LPML <- sum(log_cpo[1:m])
+    tau ~ dnorm(0.03, 1)
+}

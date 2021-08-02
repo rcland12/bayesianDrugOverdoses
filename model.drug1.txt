@@ -1,0 +1,9 @@
+model
+{
+    for (i in 1:51) {
+        y[i] ~ dnorm(mu, 29.33735)
+    }
+    mu ~ dnorm(0.058, 33.3333333)
+    y.pred ~ dnorm(mu, 29.33735)
+    prob.y <- step(y.pred - 0.1)
+}

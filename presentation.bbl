@@ -1,0 +1,32 @@
+\begin{thebibliography}{1}
+
+\bibitem{data}
+F.~Ahmad, L.~Rossen, M.~Spencer, M.~Warner, and P.~Sutton, {\em VSRR
+  Provisional Drug Overdose Death Counts}.
+\newblock Department of Health and Human Services, 2019.
+
+\bibitem{state}
+United States Census Bureau, {\em Annual Estimates of the Resident Population
+  for the United States, Regions, States, and Puerto Rico: April 1, 2010 to
+  July 1, 2018}, 2018.
+\newblock XLSX file.
+
+\bibitem{region}
+``Regions of the usa.'' website, December 2018.
+\newblock image.
+
+\bibitem{income}
+``Median household income (in 2018 inflation-adjusted dollars) - united states
+  -- states; and puerto rico.'' website, December 2018.
+\newblock table.
+
+\bibitem{health}
+Kaiser Family Foundation, {\em Health Care Expenditures per Capita by State of
+  Residence}, July 2017.
+\newblock sourced from U.S. Bureau of the Census.
+
+\bibitem{article}
+``Monthly estimates on drug overdose deaths in the united states.'' transcript,
+  April 2019.
+
+\end{thebibliography}

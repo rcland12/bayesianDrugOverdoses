@@ -1,0 +1,23 @@
+model
+{
+    for (i in 1:m) {
+        Y[i] ~ dnorm(mu[i], tau)
+        mu[i] <- inprod(beta[], X1[i, ])
+    }
+    g <- 2 * m
+    beta[1:2] ~ dmnorm(mean1[], prec[, ])
+    for (i in 1:2) {
+        for (j in 1:2) {
+            prec[i, j] <- (1/g) * tau * taumatrix1[i, j]
+        }
+    }
+    for (i in 1:m) {
+        log_cpo[i] <- -0.5 * log(tau/6.283) - 0.5 * pow((Y[i] - 
+            mu[i]), 2)
+    }
+    LPML <- sum(log_cpo[1:m])
+    tau ~ dgamma(0.01, 0.01)
+    for (i in 1:m) {
+        y[i] ~ dnorm(mu[i], tau)
+    }
+}
